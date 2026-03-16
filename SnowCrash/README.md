@@ -29,3 +29,26 @@ su levelXX
 
 - John the ripper + rockyou.txt
 => 'abcdefg'
+
+## Level 02
+- file available
+```level02.pcap```
+
+- Wireshark (follow tcp stream)
+```
+..%..%..&..... ..#..'..$..&..... ..#..'..$.. .....#.....'........... .38400,38400....#.SodaCan:0....'..DISPLAY.SodaCan:0......xterm.........."........!........"..".....b........b....	B.
+..............................1.......!.."......"......!..........."........"..".............	..
+.....................
+Linux 2.6.38-8-generic-pae (::ffff:10.1.1.2) (pts/10)
+
+..wwwbugs login: l.le.ev.ve.el.lX.X
+..
+Password: ft_wandr...NDRel.L0L
+.
+..
+Login incorrect
+wwwbugs login:
+```
+
+- Remove backspaces ('.')
+```ft_waNDReL0L```
