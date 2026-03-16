@@ -13,7 +13,7 @@ su levelXX
 ```
 
 ## Level 00
-- Find files ownwed by flag00
+- Find files owned by flag00
 ```find / -group flag00 2>/dev/null```
 
 - Cat messages
@@ -23,3 +23,9 @@ su levelXX
 => *nottoohardhere*
 
 ## Level 01
+- Search in sensitive files
+```cat /etc/passwd```
+=> flag01:42hDRfypTqqnw:3001:3001::/home/flag/flag01:/bin/bash
+
+- John the ripper + rockyou.txt
+=> 'abcdefg'
