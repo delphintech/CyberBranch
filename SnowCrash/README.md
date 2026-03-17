@@ -56,7 +56,7 @@ wwwbugs login:
 ## Level 03
 - Check available binary authorization
 ```-rwsr-sr-x 1 flag03 level03 8627 Mar  5  2016 level03```
-=> The program is run as flag 3
+=> The program is run as flag03
 
 - Reverse available binary
 => The system call is run as flag03
@@ -67,3 +67,11 @@ wwwbugs login:
 => Change Path so that echo runs the fake echo export PATH=/tmp/:$PATH
 => Run the program (so it open a bash instead of running echo)
 ```
+
+## Level 04
+- Available file
+=> Perl file, Suid as flag04
+
+- Perl code analisis
+=> It is a CGI function linked to server on localhost:4747
+```curl "http://localhost:4747/level04.pl?x=\`getflag\`"```
