@@ -123,3 +123,15 @@ echo '[x {${`getflag`}}]' > /tmp/exploit.txt
 ```ln -s /home/user/level08/token /tmp/flag```
 
 # Level 09
+- Available file
+=> Binary SUID executed as flag08 and token
+
+- Code Analysis 
+=> Print "You should not reverse this"
+
+- Execution test
+=> Encrypt file name but not content, add the index to the character
+
+- Create a decryption program to decrypt token
+
+# Level 10
