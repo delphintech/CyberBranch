@@ -115,3 +115,11 @@ echo '[x {${`getflag`}}]' > /tmp/exploit.txt
 # Level 08
 - Available file
 => Binary SUID executed as flag08 and token
+
+- Code Analysis
+=> Binary writes the content of the file if it does not have token in its name
+
+- Create symlink with another name
+```ln -s /home/user/level08/token /tmp/flag```
+
+# Level 09
